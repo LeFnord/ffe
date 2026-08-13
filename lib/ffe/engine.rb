@@ -3,5 +3,7 @@
 module Ffe
   class Engine < ::Rails::Engine
     isolate_namespace Ffe
+
+    config.ffe = Ffe::Configuration.new
   end
 end
