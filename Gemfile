@@ -21,6 +21,8 @@ group :development, :test do
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
   gem 'factory_bot_rails'
+  gem 'pry-byebug'                          # https://github.com/deivid-rodriguez/pry-byebug
+  gem 'pry-rails'                           # https://github.com/rweng/pry-rails
   gem 'rspec-rails'                         # https://github.com/rspec/rspec-rails
   gem 'rubocop-rails'                       # https://github.com/rubocop-hq/rubocop-rails/
 end

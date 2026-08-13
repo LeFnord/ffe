@@ -1,0 +1,13 @@
+<h1>FFEs</h1>
+
+<p><%= link_to "Neues FFE anlegen", new_feature_flag_path %></p>
+
+<ul>
+  <% @feature_flags.each do |feature_flag| %>
+    <li>
+      <%= link_to feature_flag.name, feature_flag_path(feature_flag) %>
+      <%= link_to "Bearbeiten", edit_feature_flag_path(feature_flag) %>
+      <%= button_to "Löschen", feature_flag_path(feature_flag), method: :delete %>
+    </li>
+  <% end %>
+</ul>

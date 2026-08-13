@@ -1,3 +1,3 @@
 Ffe::Engine.routes.draw do
-  resources :ffes
+  resources :feature_flags
 end

@@ -37,3 +37,368 @@ Generating image variants require the image_processing gem. Please add `gem "ima
 Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
 Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
 Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mFfe::Ffe Load (16.4ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" /* loading for pp */ LIMIT 11 /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[35m (27.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_development" WITH (FORCE) /*application='Dummy'*/[0m
+  [1m[35m (18.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE) /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (84.0ms)[0m  [1m[35mCREATE DATABASE "ffe_development" ENCODING = 'unicode' /*application='Dummy'*/[0m
+  [1m[35m (43.3ms)[0m  [1m[35mCREATE DATABASE "ffe_test" ENCODING = 'unicode' /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='Dummy'*/[0m
+  ↳ db/schema.rb:17:in 'block in <top (required)>'
+  [1m[35m (7.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "ffes" CASCADE;
+CREATE TABLE "ffes" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  ↳ db/schema.rb:19:in 'block in <top (required)>'
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:15:in '<top (required)>'
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  ↳ db/schema.rb:15:in '<top (required)>'
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20260810150000) /*application='Dummy'*/[0m
+  ↳ db/schema.rb:15:in '<top (required)>'
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  ↳ db/schema.rb:15:in '<top (required)>'
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  ↳ db/schema.rb:15:in '<top (required)>'
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-08-13 17:45:36.853562', '2026-08-13 17:45:36.853564') RETURNING "key" /*application='Dummy'*/[0m
+  ↳ db/schema.rb:15:in '<top (required)>'
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '97acb7d3cd1c004691498d67b818b590e5b571fe', '2026-08-13 17:45:36.858738', '2026-08-13 17:45:36.858739') RETURNING "key" /*application='Dummy'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[35m (180.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_development" WITH (FORCE) /*application='Dummy'*/[0m
+  [1m[35m (13.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE) /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (84.2ms)[0m  [1m[35mCREATE DATABASE "ffe_development" ENCODING = 'unicode' /*application='Dummy'*/[0m
+  [1m[35m (41.5ms)[0m  [1m[35mCREATE DATABASE "ffe_test" ENCODING = 'unicode' /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-08-13 17:46:13.129240', '2026-08-13 17:46:13.129241') RETURNING "key" /*application='Dummy'*/[0m
+Migrating to CreateFeatureFlags (20260810150000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Dummy'*/[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "feature_flags" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260810150000') /*application='Dummy'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='Dummy'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+DEPRECATION WARNING: Mime::EXTENSION_LOOKUP is deprecated. Use Mime.extensions to enumerate registered extensions, or Mime::Type.lookup_by_extension / Mime[...] to look one up. (called from Propshaft::LoadPath#cache_sweeper at /Users/le_fnord/.rbenv/versions/4.0.6/lib/ruby/gems/4.0.0/gems/propshaft-1.3.2/lib/propshaft/load_path.rb:55)
+Started GET "/" for ::1 at 2026-08-13 21:02:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/le_fnord/.rbenv/versions/4.0.6/lib/ruby/gems/4.0.0/bundler/gems/rails-75c5a9710247/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/le_fnord/.rbenv/versions/4.0.6/lib/ruby/gems/4.0.0/bundler/gems/rails-75c5a9710247/railties/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | GC: 0.9ms)
+Completed 200 OK in 15ms (Views: 4.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.4ms)
+
+
+Started GET "/" for ::1 at 2026-08-13 21:02:22 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/le_fnord/.rbenv/versions/4.0.6/lib/ruby/gems/4.0.0/bundler/gems/rails-75c5a9710247/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/le_fnord/.rbenv/versions/4.0.6/lib/ruby/gems/4.0.0/bundler/gems/rails-75c5a9710247/railties/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:02:23 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (1.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 3.7ms | GC: 0.2ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 8.7ms | GC: 0.4ms)
+Completed 200 OK in 49ms (Views: 8.8ms | ActiveRecord: 8.3ms (1 query, 0 cached) | GC: 8.2ms)
+
+
+Started GET "/feature_flags" for ::1 at 2026-08-13 21:02:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/feature_flags"):
+  
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:02:44 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.4ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags/new" for ::1 at 2026-08-13 21:02:49 +0200
+Processing by Ffe::FeatureFlagsController#new as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 5.4ms | GC: 0.0ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 9.0ms | ActiveRecord: 2.6ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/ffe/feature_flags" for ::1 at 2026-08-13 21:02:52 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "feature_flag" => {"name" => "asdfasd"}, "commit" => "Create Feature flag"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.4ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = 'asdfasd' LIMIT 1 /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mFfe::FeatureFlag Create (0.9ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ('asdfasd', NULL, FALSE, NULL, '2026-08-13 19:02:52.780019', '2026-08-13 19:02:52.780019') RETURNING "id" /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*action='create',application='Dummy',controller='feature_flags'*/[0m
+Redirected to http://localhost:3000/ffe/feature_flags/1
+Completed 302 Found in 17ms (ActiveRecord: 1.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags/1" for ::1 at 2026-08-13 21:02:52 +0200
+Processing by Ffe::FeatureFlagsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::FeatureFlag Load (0.4ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = 1 LIMIT 1 /*action='show',application='Dummy',controller='feature_flags'*/[0m
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/show.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/show.html.erb within layouts/ffe/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[35m (140.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_development" WITH (FORCE) /*application='Dummy'*/[0m
+  [1m[35m (22.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE) /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (78.2ms)[0m  [1m[35mCREATE DATABASE "ffe_development" ENCODING = 'unicode' /*application='Dummy'*/[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-08-13 19:04:06.306140', '2026-08-13 19:04:06.306142') RETURNING "key" /*application='Dummy'*/[0m
+Migrating to CreateFeatureFlags (20260810150000)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='Dummy'*/[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "feature_flags" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "milieu" bit(4) DEFAULT B'0000', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260810150000') /*application='Dummy'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='Dummy'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[35m (31.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_development" WITH (FORCE) /*application='Dummy'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE) /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (83.8ms)[0m  [1m[35mCREATE DATABASE "ffe_development" ENCODING = 'unicode' /*application='Dummy'*/[0m
+  [1m[35m (42.7ms)[0m  [1m[35mCREATE DATABASE "ffe_test" ENCODING = 'unicode' /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-08-13 19:04:33.334957', '2026-08-13 19:04:33.334959') RETURNING "key" /*application='Dummy'*/[0m
+Migrating to CreateFeatureFlags (20260810150000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Dummy'*/[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "feature_flags" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "milieu" bit(4) DEFAULT B'0000', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260810150000') /*application='Dummy'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*application='Dummy'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[35m (172.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_development" WITH (FORCE) /*application='Dummy'*/[0m
+  [1m[35m (14.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE) /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (74.7ms)[0m  [1m[35mCREATE DATABASE "ffe_development" ENCODING = 'unicode' /*application='Dummy'*/[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCREATE DATABASE "ffe_test" ENCODING = 'unicode' /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-08-13 19:06:27.983041', '2026-08-13 19:06:27.983043') RETURNING "key" /*application='Dummy'*/[0m
+Migrating to CreateFeatureFlags (20260810150000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Dummy'*/[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "feature_flags" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "milieu" bit(4) DEFAULT B'0000', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_feature_flags_on_name" ON "feature_flags" ("name") /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260810150000') /*application='Dummy'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='Dummy'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1840244731838000355) /*application='Dummy'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+DEPRECATION WARNING: Mime::EXTENSION_LOOKUP is deprecated. Use Mime.extensions to enumerate registered extensions, or Mime::Type.lookup_by_extension / Mime[...] to look one up. (called from Propshaft::LoadPath#cache_sweeper at /Users/le_fnord/.rbenv/versions/4.0.6/lib/ruby/gems/4.0.0/gems/propshaft-1.3.2/lib/propshaft/load_path.rb:55)
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:30:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Dummy'*/[0m
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (2.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 12.6ms | GC: 9.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 16.1ms | GC: 9.3ms)
+Completed 200 OK in 44ms (Views: 15.4ms | ActiveRecord: 12.2ms (1 query, 0 cached) | GC: 9.3ms)
+
+
+Started GET "/ffe/feature_flags/new" for ::1 at 2026-08-13 21:30:40 +0200
+Processing by Ffe::FeatureFlagsController#new as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 6.6ms | GC: 0.6ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application (Duration: 8.1ms | GC: 0.6ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 8.7ms | GC: 0.6ms)
+Completed 200 OK in 31ms (Views: 9.4ms | ActiveRecord: 3.8ms (0 queries, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:30:44 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.6ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 7.5ms | GC: 1.0ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/ffe/feature_flags/new" for ::1 at 2026-08-13 21:31:29 +0200
+Processing by Ffe::FeatureFlagsController#new as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:31:33 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.7ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags/new" for ::1 at 2026-08-13 21:53:43 +0200
+Processing by Ffe::FeatureFlagsController#new as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 5.5ms | GC: 0.0ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application (Duration: 6.9ms | GC: 0.3ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 7.6ms | GC: 0.3ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/ffe/feature_flags" for ::1 at 2026-08-13 21:53:53 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "feature_flag" => {"name" => "dummy test", "description" => "test", "enabled" => "1"}, "commit" => "Create Feature flag"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mFfe::FeatureFlag Pluck (2.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = 'dummy test' LIMIT 1 /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 2.2ms | GC: 0.0ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 27ms (Views: 4.0ms | ActiveRecord: 3.6ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started POST "/ffe/feature_flags" for ::1 at 2026-08-13 21:54:39 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "feature_flag" => {"name" => "dummy test", "description" => "nochmal", "enabled" => "1"}, "commit" => "Create Feature flag"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = 'dummy test' LIMIT 1 /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/new.html.erb within layouts/ffe/application (Duration: 3.7ms | GC: 1.5ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 4.0ms | GC: 1.5ms)
+Completed 422 Unprocessable Content in 38ms (Views: 6.3ms | ActiveRecord: 11.9ms (1 query, 0 cached) | GC: 14.6ms)
+
+
+Started POST "/ffe/feature_flags" for ::1 at 2026-08-13 21:54:44 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "feature_flag" => {"name" => "dummy_test", "description" => "nochmal", "enabled" => "1"}, "commit" => "Create Feature flag"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = 'dummy_test' LIMIT 1 /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mFfe::FeatureFlag Create (2.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ('dummy_test', 'nochmal', TRUE, NULL, B'0000', '2026-08-13 19:54:44.547600', '2026-08-13 19:54:44.547600') RETURNING "id" /*action='create',application='Dummy',controller='feature_flags'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*action='create',application='Dummy',controller='feature_flags'*/[0m
+Redirected to http://localhost:3000/ffe/feature_flags/1
+Completed 302 Found in 18ms (ActiveRecord: 3.1ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/ffe/feature_flags/1" for ::1 at 2026-08-13 21:54:44 +0200
+Processing by Ffe::FeatureFlagsController#show as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::FeatureFlag Load (0.6ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = 1 LIMIT 1 /*action='show',application='Dummy',controller='feature_flags'*/[0m
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/show.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/show.html.erb within layouts/ffe/application (Duration: 1.4ms | GC: 0.6ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.3ms | GC: 0.6ms)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:54:47 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.8ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 5.5ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 6.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags/1/edit" for ::1 at 2026-08-13 21:54:51 +0200
+Processing by Ffe::FeatureFlagsController#edit as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::FeatureFlag Load (0.4ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = 1 LIMIT 1 /*action='edit',application='Dummy',controller='feature_flags'*/[0m
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/edit.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/_form.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/edit.html.erb within layouts/ffe/application (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ffe/feature_flags" for ::1 at 2026-08-13 21:54:53 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.4ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC /*action='index',application='Dummy',controller='feature_flags'*/[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 5.5ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+

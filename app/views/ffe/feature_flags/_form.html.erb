@@ -1,0 +1,31 @@
+<%= form_with model: feature_flag do |form| %>
+  <% if feature_flag.errors.any? %>
+    <div>
+      <h2><%= pluralize(feature_flag.errors.count, "Fehler") %> verhindert das Speichern:</h2>
+      <ul>
+        <% feature_flag.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :enabled %>
+    <%= form.check_box :enabled %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
