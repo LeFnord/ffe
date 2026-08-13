@@ -1,0 +1,13 @@
+<h1>FFEs</h1>
+
+<p><%= link_to "Neues FFE anlegen", new_ffe_path %></p>
+
+<ul>
+  <% @ffes.each do |ffe| %>
+    <li>
+      <%= link_to ffe.name, ffe_path(ffe) %>
+      <%= link_to "Bearbeiten", edit_ffe_path(ffe) %>
+      <%= button_to "Löschen", ffe_path(ffe), method: :delete %>
+    </li>
+  <% end %>
+</ul>

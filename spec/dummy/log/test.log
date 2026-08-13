@@ -1,0 +1,1277 @@
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+Started GET "/ffe" for 127.0.0.1 at 2026-08-10 23:52:04 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2026-08-10 21:57:15.928491', '2026-08-10 21:57:15.928492') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFfes (20260810150000)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN immediate TRANSACTION[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ffes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260810150000')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mCOMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "ffes";
+CREATE TABLE "ffes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20260810150000)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2026-08-10 21:57:25.733481', '2026-08-10 21:57:25.733483') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'f33381694c7365eb9f666a61aa3a8d3a02169057', '2026-08-10 21:57:25.734024', '2026-08-10 21:57:25.734025') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+Started GET "/ffe" for 127.0.0.1 at 2026-08-10 23:57:25 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:57:40.329740"], ["updated_at", "2026-08-10 21:57:40.329740"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-10 23:57:40 +0200
+Processing by Ffe::Admin::FfesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:57:40.356150"], ["updated_at", "2026-08-10 21:57:40.356150"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-10 23:57:40 +0200
+Processing by Ffe::Admin::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:57:40.365519"], ["updated_at", "2026-08-10 21:57:40.365519"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-10 23:57:40 +0200
+Processing by Ffe::Admin::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:57:40.367054"], ["updated_at", "2026-08-10 21:57:40.367054"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-10 23:57:40 +0200
+Processing by Ffe::Admin::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+Started GET "/ffe" for 127.0.0.1 at 2026-08-10 23:57:40 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:58:04.193078"], ["updated_at", "2026-08-10 21:58:04.193078"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-10 23:58:04 +0200
+Processing by Ffe::Admin::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.4ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:58:04.217156"], ["updated_at", "2026-08-10 21:58:04.217156"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-10 23:58:04 +0200
+Processing by Ffe::Admin::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2026-08-10 21:58:04.221088"], ["updated_at", "2026-08-10 21:58:04.221088"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:58:04.223478"], ["updated_at", "2026-08-10 21:58:04.223478"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-10 23:58:04 +0200
+Processing by Ffe::Admin::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-10 21:58:04.225437"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-10 21:58:04.226915"], ["updated_at", "2026-08-10 21:58:04.226915"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-10 23:58:04 +0200
+Processing by Ffe::Admin::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+Started GET "/ffe" for 127.0.0.1 at 2026-08-10 23:58:04 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:42:14.322781"], ["updated_at", "2026-08-11 15:42:14.322781"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-11 17:42:14 +0200
+Processing by Ffe::Admin::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 4.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:42:14.352710"], ["updated_at", "2026-08-11 15:42:14.352710"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-11 17:42:14 +0200
+Processing by Ffe::Admin::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2026-08-11 15:42:14.356922"], ["updated_at", "2026-08-11 15:42:14.356922"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:42:14.359108"], ["updated_at", "2026-08-11 15:42:14.359108"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-11 17:42:14 +0200
+Processing by Ffe::Admin::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-11 15:42:14.360590"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:42:14.362193"], ["updated_at", "2026-08-11 15:42:14.362193"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-11 17:42:14 +0200
+Processing by Ffe::Admin::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+Started GET "/ffe" for 127.0.0.1 at 2026-08-11 17:42:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/ffe"):
+  
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:02.740787"], ["updated_at", "2026-08-11 15:55:02.740787"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-11 17:55:02 +0200
+Processing by Ffe::Admin::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:02.763415"], ["updated_at", "2026-08-11 15:55:02.763415"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-11 17:55:02 +0200
+Processing by Ffe::Admin::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2026-08-11 15:55:02.766643"], ["updated_at", "2026-08-11 15:55:02.766643"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/2
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:02.768822"], ["updated_at", "2026-08-11 15:55:02.768822"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-11 17:55:02 +0200
+Processing by Ffe::Admin::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-11 15:55:02.770099"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:02.771396"], ["updated_at", "2026-08-11 15:55:02.771396"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-11 17:55:02 +0200
+Processing by Ffe::Admin::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+Started GET "/ffe" for 127.0.0.1 at 2026-08-11 17:55:02 +0200
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:24.145273"], ["updated_at", "2026-08-11 15:55:24.145273"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-11 17:55:24 +0200
+Processing by Ffe::Admin::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/admin/ffes/index.html.erb within layouts/ffe/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:24.167859"], ["updated_at", "2026-08-11 15:55:24.167859"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/admin/ffes" for 127.0.0.1 at 2026-08-11 17:55:24 +0200
+Processing by Ffe::Admin::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2026-08-11 15:55:24.171163"], ["updated_at", "2026-08-11 15:55:24.171163"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:24.173362"], ["updated_at", "2026-08-11 15:55:24.173362"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-11 17:55:24 +0200
+Processing by Ffe::Admin::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-11 15:55:24.174657"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-11 15:55:24.175935"], ["updated_at", "2026-08-11 15:55:24.175935"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/admin/ffes/1" for 127.0.0.1 at 2026-08-11 17:55:24 +0200
+Processing by Ffe::Admin::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/admin/ffes
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.4ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:26.509969"], ["updated_at", "2026-08-12 18:15:26.509969"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:15:26 +0200
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:26.520484"], ["updated_at", "2026-08-12 18:15:26.520484"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:15:26 +0200
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:26.528341"], ["updated_at", "2026-08-12 18:15:26.528341"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:15:26 +0200
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:26.529570"], ["updated_at", "2026-08-12 18:15:26.529570"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:15:26 +0200
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:57.166122"], ["updated_at", "2026-08-12 18:15:57.166122"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:15:57 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.3ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 4.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:57.195978"], ["updated_at", "2026-08-12 18:15:57.195978"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:15:57 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2026-08-12 18:15:57.199889"], ["updated_at", "2026-08-12 18:15:57.199889"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:57.202232"], ["updated_at", "2026-08-12 18:15:57.202232"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:15:57 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:15:57.203963"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:15:57.205596"], ["updated_at", "2026-08-12 18:15:57.205596"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:15:57 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:18:52.212144"], ["updated_at", "2026-08-12 18:18:52.212144"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:18:52 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:18:52.234665"], ["updated_at", "2026-08-12 18:18:52.234665"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:18:52 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["created_at", "2026-08-12 18:18:52.237950"], ["updated_at", "2026-08-12 18:18:52.237950"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:18:52.240306"], ["updated_at", "2026-08-12 18:18:52.240306"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:18:52 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:18:52.241822"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "created_at", "updated_at") VALUES (?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["created_at", "2026-08-12 18:18:52.243257"], ["updated_at", "2026-08-12 18:18:52.243257"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:18:52 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "ffes";
+CREATE TABLE "ffes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "description" varchar, "enabled" boolean DEFAULT FALSE, "expires_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20260810150000)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2026-08-12 18:26:47.781046', '2026-08-12 18:26:47.781048') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'c05ec3dd2f331ca492f0c63746e074466990717e', '2026-08-12 18:26:47.781596', '2026-08-12 18:26:47.781596') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", 0], ["expires_at", nil], ["created_at", "2026-08-12 18:26:47.817207"], ["updated_at", "2026-08-12 18:26:47.817207"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:26:47 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "1"}
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.0ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", 0], ["expires_at", nil], ["created_at", "2026-08-12 18:26:47.845709"], ["updated_at", "2026-08-12 18:26:47.845709"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:26:47 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", 0], ["expires_at", nil], ["created_at", "2026-08-12 18:26:47.855676"], ["updated_at", "2026-08-12 18:26:47.855676"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:26:47 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.0ms)[0m  [1m[33mUPDATE "ffes" SET "name" = ?, "updated_at" = ? WHERE "ffes"."id" = ?[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:26:47.856684"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/1
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", 0], ["expires_at", nil], ["created_at", "2026-08-12 18:26:47.858367"], ["updated_at", "2026-08-12 18:26:47.858367"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:26:47 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.0ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", 0], ["expires_at", nil], ["created_at", "2026-08-12 18:26:47.859181"], ["updated_at", "2026-08-12 18:26:47.859181"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/2
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.0ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (76.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE)[0m
+  [1m[35m (39.6ms)[0m  [1m[35mCREATE DATABASE "ffe_test" ENCODING = 'unicode'[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "ffes" CASCADE;
+CREATE TABLE "ffes" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20260810150000)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2026-08-12 18:35:08.055948', '2026-08-12 18:35:08.055950') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '5ab892e14207f68e16f05e87822f816a0b408434', '2026-08-12 18:35:08.057136', '2026-08-12 18:35:08.057137') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:35:08.099981"], ["updated_at", "2026-08-12 18:35:08.099981"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:35:08 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.1ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:35:08.127410"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/1
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:35:08.131579"], ["updated_at", "2026-08-12 18:35:08.131579"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:35:08 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:35:08.133585"], ["updated_at", "2026-08-12 18:35:08.133585"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/3
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:35:08.135253"], ["updated_at", "2026-08-12 18:35:08.135253"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:35:08 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:35:08.145599"], ["updated_at", "2026-08-12 18:35:08.145599"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/5" for 127.0.0.1 at 2026-08-12 20:35:08 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "5"}
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[35m (31.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ffe_test" WITH (FORCE)[0m
+  [1m[35m (47.6ms)[0m  [1m[35mCREATE DATABASE "ffe_test" ENCODING = 'unicode'[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ffes" CASCADE;
+CREATE TABLE "ffes" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying, "enabled" boolean DEFAULT FALSE, "expires_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20260810150000)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2026-08-12 18:37:00.879796', '2026-08-12 18:37:00.879798') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '97acb7d3cd1c004691498d67b818b590e5b571fe', '2026-08-12 18:37:00.881461', '2026-08-12 18:37:00.881462') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:37:00.924836"], ["updated_at", "2026-08-12 18:37:00.924836"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/1" for 127.0.0.1 at 2026-08-12 20:37:00 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "1"}
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Update (0.2ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:37:00.947563"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/1
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:37:00.951274"], ["updated_at", "2026-08-12 18:37:00.951274"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:37:00 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:37:00.960204"], ["updated_at", "2026-08-12 18:37:00.960204"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:37:00 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:37:00.961904"], ["updated_at", "2026-08-12 18:37:00.961904"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/4
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:37:00.963465"], ["updated_at", "2026-08-12 18:37:00.963465"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/5" for 127.0.0.1 at 2026-08-12 20:37:00 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "5"}
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (1.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.4ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:02.268867"], ["updated_at", "2026-08-12 18:47:02.268867"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/6" for 127.0.0.1 at 2026-08-12 20:47:02 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "6"}
+  [1m[36mFfe::Ffe Load (0.4ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.3ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 AND "ffes"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 6], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Update (0.5ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:47:02.285777"], ["id", 6]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/6
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:02.290065"], ["updated_at", "2026-08-12 18:47:02.290065"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:47:02 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:02.292337"], ["updated_at", "2026-08-12 18:47:02.292337"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/8
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.6ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:02.295156"], ["updated_at", "2026-08-12 18:47:02.295156"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/9" for 127.0.0.1 at 2026-08-12 20:47:02 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "9"}
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:02.298286"], ["updated_at", "2026-08-12 18:47:02.298286"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:47:02 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.3ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.3ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Test"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (1.0ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.5ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:48.315022"], ["updated_at", "2026-08-12 18:47:48.315022"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/11" for 127.0.0.1 at 2026-08-12 20:47:48 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma"}, "id" => "11"}
+  [1m[36mFfe::Ffe Load (0.4ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.3ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 AND "ffes"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 11], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Update (0.6ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 18:47:48.332346"], ["id", 11]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/11
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:48.336684"], ["updated_at", "2026-08-12 18:47:48.336684"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:47:48 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.6ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:48.345661"], ["updated_at", "2026-08-12 18:47:48.345661"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/13" for 127.0.0.1 at 2026-08-12 20:47:48 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "13"}
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:48.349529"], ["updated_at", "2026-08-12 18:47:48.349529"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 20:47:48 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 18:47:48.350935"], ["updated_at", "2026-08-12 18:47:48.350935"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/15
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.2ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (1.3ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.4ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:27.099316"], ["created_at", "2026-08-12 21:41:27.104784"], ["updated_at", "2026-08-12 21:41:27.104784"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 23:41:27 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.6ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:27.133908"], ["created_at", "2026-08-12 21:41:27.134363"], ["updated_at", "2026-08-12 21:41:27.134363"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/17" for 127.0.0.1 at 2026-08-12 23:41:27 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "17"}
+  [1m[36mFfe::Ffe Load (0.4ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 2ms (ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:27.142349"], ["created_at", "2026-08-12 21:41:27.142726"], ["updated_at", "2026-08-12 21:41:27.142726"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/18" for 127.0.0.1 at 2026-08-12 23:41:27 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-19 21:41:27 UTC"}, "id" => "18"}
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.3ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 AND "ffes"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 18], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Update (0.2ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 21:41:27.144682"], ["id", 18]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/18
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.1ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:27.146638"], ["created_at", "2026-08-12 21:41:27.146972"], ["updated_at", "2026-08-12 21:41:27.146972"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 23:41:27 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-19 21:41:27 UTC"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 21:41:27.148616"], ["updated_at", "2026-08-12 21:41:27.148616"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/20
+Completed 302 Found in 1ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.8ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.2ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.7ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:31.874396"], ["created_at", "2026-08-12 21:41:31.874809"], ["updated_at", "2026-08-12 21:41:31.874809"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/21" for 127.0.0.1 at 2026-08-12 23:41:31 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-19 21:41:31 UTC"}, "id" => "21"}
+  [1m[36mFfe::Ffe Load (0.4ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.2ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 AND "ffes"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 21], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Update (0.4ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 21:41:31.892538"], ["id", 21]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/21
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:31.896321"], ["created_at", "2026-08-12 21:41:31.896714"], ["updated_at", "2026-08-12 21:41:31.896714"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/22" for 127.0.0.1 at 2026-08-12 23:41:31 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "22"}
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 22]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 1ms (ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.1ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:31.900836"], ["created_at", "2026-08-12 21:41:31.901210"], ["updated_at", "2026-08-12 21:41:31.901210"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 23:41:31 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.5ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.4ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:41:31.909775"], ["created_at", "2026-08-12 21:41:31.910187"], ["updated_at", "2026-08-12 21:41:31.910187"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 23:41:31 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-19 21:41:31 UTC"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 21:41:31.912060"], ["updated_at", "2026-08-12 21:41:31.912060"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/25
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.7ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:46:51.413116"], ["created_at", "2026-08-12 21:46:51.417818"], ["updated_at", "2026-08-12 21:46:51.417818"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/ffes" for 127.0.0.1 at 2026-08-12 23:46:51 +0200
+Processing by Ffe::FfesController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::Ffe Load (0.8ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/ffes/index.html.erb within layouts/ffe/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:46:51.445838"], ["created_at", "2026-08-12 21:46:51.446328"], ["updated_at", "2026-08-12 21:46:51.446328"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started DELETE "/ffe/ffes/27" for 127.0.0.1 at 2026-08-12 23:46:51 +0200
+Processing by Ffe::FfesController#destroy as HTML
+  Parameters: {"id" => "27"}
+  [1m[36mFfe::Ffe Load (0.3ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "ffes" WHERE "ffes"."id" = $1[0m  [["id", 27]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes
+Completed 302 Found in 2ms (ActiveRecord: 0.9ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.2ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.3ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:46:51.454805"], ["created_at", "2026-08-12 21:46:51.455253"], ["updated_at", "2026-08-12 21:46:51.455253"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/ffes/28" for 127.0.0.1 at 2026-08-12 23:46:51 +0200
+Processing by Ffe::FfesController#update as HTML
+  Parameters: {"ffe" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-19 21:46:51 UTC"}, "id" => "28"}
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.4ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 AND "ffes"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 28], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Update (0.3ms)[0m  [1m[33mUPDATE "ffes" SET "name" = $1, "updated_at" = $2 WHERE "ffes"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-12 21:46:51.457535"], ["id", 28]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/28
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" WHERE "ffes"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-19 21:46:51.459741"], ["created_at", "2026-08-12 21:46:51.460149"], ["updated_at", "2026-08-12 21:46:51.460149"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+Started POST "/ffe/ffes" for 127.0.0.1 at 2026-08-12 23:46:51 +0200
+Processing by Ffe::FfesController#create as HTML
+  Parameters: {"ffe" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-19 21:46:51 UTC"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::Ffe Create (0.2ms)[0m  [1m[32mINSERT INTO "ffes" ("name", "description", "enabled", "expires_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["created_at", "2026-08-12 21:46:51.461690"], ["updated_at", "2026-08-12 21:46:51.461690"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/ffes/30
+Completed 302 Found in 1ms (ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::Ffe Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "ffes"[0m
+  [1m[36mFfe::Ffe Load (0.2ms)[0m  [1m[34mSELECT "ffes".* FROM "ffes" ORDER BY "ffes"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.0ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::Ffe Pluck (0.1ms)[0m  [1m[34mSELECT "ffes"."id" FROM "ffes" WHERE "ffes"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m

@@ -1,0 +1,21 @@
+<%= form_with model: ffe do |form| %>
+  <% if ffe.errors.any? %>
+    <div>
+      <h2><%= pluralize(ffe.errors.count, "Fehler") %> verhindert das Speichern:</h2>
+      <ul>
+        <% ffe.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
