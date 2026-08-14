@@ -69,23 +69,63 @@ RSpec.describe Ffe::FeatureFlag, type: :model do
     end
   end
 
+  describe '.enabled_for?' do
+    describe 'no user given falls back to .enabled?' do
+      subject { described_class.enabled_for?(:dummy) }
+
+      before do
+        create(:feature_flag, name: 'dummy', enabled: true, milieu: '1000')
+      end
+
+      it { is_expected.to be_truthy }
+    end
+
+    describe 'user given' do
+      let(:user) { create(:user) }
+      subject { described_class.enabled_for?(:dummy, user: user) }
+
+      describe 'user allowed and enabled' do
+        before do
+          user
+          create(:feature_flag, name: 'dummy', enabled: true, user_ids: [user.id, 23, 47])
+        end
+
+        it { is_expected.to be_truthy }
+      end
+
+      describe 'user allowed but not enabled' do
+        before do
+          user
+          create(:feature_flag, name: 'dummy', enabled: false, user_ids: [user.id, 23, 47])
+        end
+
+        it { is_expected.to be_falsey }
+      end
+
+      describe 'user not allowed' do
+        before do
+          user
+          create(:feature_flag, name: 'dummy', enabled: true, user_ids: [13, 23, 47])
+        end
+
+        it { is_expected.to be_falsey }
+      end
+    end
+  end
+
   describe '#allowed_milieu?' do
     subject { feature_flag.allowed_milieu? }
 
     describe 'not allowed' do
       let(:feature_flag) { create(:feature_flag, name: 'dummy_of', milieu: '0000') }
 
-      specify do
-        expect(subject).to be_falsey
-      end
+      it { is_expected.to be_falsey }
     end
 
     describe 'allowed' do
       let(:feature_flag) { create(:feature_flag, name: 'dummy_of', milieu: '1000') }
 
-      specify do
-        expect(subject).to be_truthy
-      end
+      it { is_expected.to be_truthy }
     end
   end
 end

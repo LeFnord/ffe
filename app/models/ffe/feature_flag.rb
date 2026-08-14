@@ -20,6 +20,15 @@ module Ffe
       !enabled?(flag)
     end
 
+    def self.enabled_for?(flag, user: nil)
+      return enabled?(flag) if user.blank?
+
+      feature = find_by(name: flag)
+      return false unless feature.allowed_milieu?
+
+      feature.enabled? && feature.user_ids.include?(user.id.to_s)
+    end
+
     # instance methods
     #
     def allowed_milieu?
