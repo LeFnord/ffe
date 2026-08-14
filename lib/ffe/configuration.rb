@@ -5,7 +5,7 @@ module Ffe
     attr_accessor :bitlength, :env_variable, :milieus
 
     def initialize
-      @bitlength = 3
+      @bitlength = 4
       @env_variable = 'RAILS_ENV'
       @milieus = { development: 0, staging: 1, production: 2 }
     end

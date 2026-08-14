@@ -40,11 +40,12 @@ module Ffe
     end
 
     def readable_milieus # rubocop:disable Metrics/AbcSize
-      return 'all' if milieu.chars[0..(Ffe.config.milieus.length - 1)].all? { |m| m == '1' }
-      return 'no' if milieu.chars[0..(Ffe.config.milieus.length - 1)].all? { |m| m == '0' }
+      relevant = milieu.to_s.ljust(Ffe.config.milieus.length, '0').chars.first(Ffe.config.milieus.length)
+      return 'all' if relevant.all? { |m| m == '1' }
+      return 'no' if relevant.all? { |m| m == '0' }
 
       inverted = Ffe.config.milieus.invert
-      milieu.chars.each_with_index.filter_map { |m, i| inverted[i].to_s if m == '1' }.join(', ')
+      relevant.each_with_index.filter_map { |m, i| inverted[i] if m == '1' }.join(', ')
     end
   end
 end

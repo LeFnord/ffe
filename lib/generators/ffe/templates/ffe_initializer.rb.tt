@@ -14,7 +14,7 @@ Ffe.configure do |config|
   #
   #   for example: add a fourth environment
   #     config.milieus = { development: 0, staging: 1, production: 2, testing: 3}
-  #   the minimum bitlenght becomes:
+  #   the minimum bitlength becomes:
   #     config.bitlength = 4
   #
   #   (later changes are bit more complicated, so increase the bit length before)
