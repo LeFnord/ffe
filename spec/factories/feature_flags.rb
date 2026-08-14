@@ -5,5 +5,6 @@ FactoryBot.define do
     name { 'dumme_flag' }
     enabled { false }
     expires_at { 1.week.from_now }
+    milieu { '1000' }
   end
 end

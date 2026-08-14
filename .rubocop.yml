@@ -8,6 +8,7 @@ AllCops:
     - 'db/**/*'
     - 'bin/**/*'
     - 'config/**/*'
+    - spec/dummy/db/schema.rb
   UseCache: true
   NewCops: enable
   SuggestExtensions: false

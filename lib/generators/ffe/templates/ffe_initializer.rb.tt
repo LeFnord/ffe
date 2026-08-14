@@ -2,7 +2,15 @@
 
 Ffe.configure do |config|
   # Configure the Ffe engine here.
-  config.enabled = false
-  config.milieus = { development: 0, testing: 1, staging: 2, production: 3 }
+  # (given values are the defaults)
+
+  # define the environments you want to use,
+  # the number maps directly to the milieu bit mask
+  #
+  # have in mind to adjust the milieu column length to your needs,
+  # per default it has a length of 4 bits
+  config.milieus = { development: 0, staging: 1, production: 2 }
+
+  # not all rails apps are using RAILS_ENV variable to set it
   config.env_variable = 'RAILS_ENV'
 end
