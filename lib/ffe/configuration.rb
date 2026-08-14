@@ -2,11 +2,12 @@
 
 module Ffe
   class Configuration
-    attr_accessor :milieus, :env_variable
+    attr_accessor :bitlength, :env_variable, :milieus
 
     def initialize
-      @milieus = { development: 0, staging: 1, production: 2 }
+      @bitlength = 4
       @env_variable = 'RAILS_ENV'
+      @milieus = { development: 0, staging: 1, production: 2 }
     end
   end
 end

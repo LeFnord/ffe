@@ -26,6 +26,22 @@
   </div>
 
   <div>
+    <%= form.label :expires_at %>
+    <%= form.datetime_local_field :expires_at, min: Time.current.tomorrow.beginning_of_day, value: feature_flag.expires_at&.strftime('%Y-%m-%dT%H:%M') %>
+  </div>
+
+  <div>
+    <%= form.fields_for :milieus do |milieu| %>
+      <%- Ffe.config.milieus.each do |(env, pos)| %>
+        <div>
+          <%= milieu.label env %>
+          <%= milieu.check_box env, checked: feature_flag.milieu[pos] == '1' %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>

@@ -1,4 +1,21 @@
 <h1><%= @feature_flag.name %></h1>
 
+<div>
+  <strong>Description:</strong>
+  <%= @feature_flag.description %>
+</div>
+<div>
+  <strong>Enabled:</strong>
+  <%= @feature_flag.enabled %>
+</div>
+<div>
+  <strong>Expires at:</strong>
+  <%= @feature_flag.expires_at&.strftime('%Y-%m-%dT%H:%M') %>
+</div>
+<div>
+  <strong>Milieus:</strong>
+  <%= @feature_flag.readable_milieus %>
+</div>
+
 <p><%= link_to "Bearbeiten", edit_feature_flag_path(@feature_flag) %></p>
 <p><%= link_to "Zurück", feature_flags_path %></p>

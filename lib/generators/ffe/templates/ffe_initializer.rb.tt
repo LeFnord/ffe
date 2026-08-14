@@ -4,11 +4,21 @@ Ffe.configure do |config|
   # Configure the Ffe engine here.
   # (given values are the defaults)
 
+  # configure the length of the bitmask, used to store the milieus,
+  # the minimum length should be length of milieus
+  config.bitlength = 4
+
   # define the environments you want to use,
-  # the number maps directly to the milieu bit mask
+  # the count of items maps directly to the length of the milieu bit mask above,
+  # so change it accordingly
   #
-  # have in mind to adjust the milieu column length to your needs,
-  # per default it has a length of 4 bits
+  #   for example: add a fourth environment
+  #     config.milieus = { development: 0, staging: 1, production: 2, testing: 3}
+  #   the minimum bitlength becomes:
+  #     config.bitlength = 4
+  #
+  #   (later changes are bit more complicated, so increase the bit length before)
+  #
   config.milieus = { development: 0, staging: 1, production: 2 }
 
   # not all rails apps are using RAILS_ENV variable to set it
