@@ -25,9 +25,4 @@ group :development, :test do
   gem 'pry-rails'                           # https://github.com/rweng/pry-rails
   gem 'rspec-rails'                         # https://github.com/rspec/rspec-rails
   gem 'rubocop-rails'                       # https://github.com/rubocop-hq/rubocop-rails/
-
-  # neede only for pipeline
-  gem 'rubocop-minitest'
-  gem 'rubocop-packaging'
-  gem 'rubocop-performance'
 end
