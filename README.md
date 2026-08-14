@@ -1,8 +1,6 @@
 # Ffe
-Short description and motivation.
 
-## Usage
-How to use my plugin.
+A minimalistic Feature Flag engine, cause i was bored of unleash and other overloaded ones.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -13,13 +11,30 @@ gem "ffe"
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
-Or install it yourself as:
+Copy over the initializer with:
 ```bash
-$ gem install ffe
+$ bin/rails g ffe:install
 ```
+and adjust it to your needs.
+
+Install the migration with:
+```bash
+$ bin/rails ffe:install:migrations
+```
+(have an eye on the length of the `milieu` bit mask)
+
+Mount the engine in your application's `config/routes.rb` file:
+```ruby
+mount Ffe::Engine => "/feature_flags"
+```
+
+## Usage
+
+coming soon
+
 
 ## Contributing
 Contribution directions go here.
