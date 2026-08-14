@@ -1,11 +1,15 @@
 /.bundle/
-/doc/
-/log/*.log
 /pkg/
-/tmp/
-/spec/dummy/log/*.log
-/spec/dummy/storage/
-/spec/dummy/tmp/
-spec/dummy/log/development.log
+/doc/
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/spec/dummy/log/*
+/spec/dummy/tmp/*
+!/spec/dummy/log/.keep
+!/spec/dummy/tmp/.keep
+
 notes.md
-spec/dummy/log/test.log
