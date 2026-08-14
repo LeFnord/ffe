@@ -38,5 +38,13 @@ module Ffe
       pos = Ffe.config.milieus[actual_milieu.to_sym]
       milieu[pos] == '1'
     end
+
+    def readable_milieus # rubocop:disable Metrics/AbcSize
+      return 'all' if milieu.chars[0..(Ffe.config.milieus.length - 1)].all? { |m| m == '1' }
+      return 'no' if milieu.chars[0..(Ffe.config.milieus.length - 1)].all? { |m| m == '0' }
+
+      inverted = Ffe.config.milieus.invert
+      milieu.chars.each_with_index.filter_map { |m, i| inverted[i].to_s if m == '1' }.join(', ')
+    end
   end
 end

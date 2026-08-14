@@ -1,6 +1,6 @@
-<h1>FFEs</h1>
+<h1>Feature Flags</h1>
 
-<p><%= link_to "Neues FFE anlegen", new_feature_flag_path %></p>
+<p><%= link_to "Neues Feature Flag anlegen", new_feature_flag_path %></p>
 
 <ul>
   <% @feature_flags.each do |feature_flag| %>
@@ -11,3 +11,26 @@
     </li>
   <% end %>
 </ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Enabled</th>
+      <th>Expires At</th>
+      <th>Environments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @feature_flags.each do |feature_flag| %>
+      <tr>
+        <td><%= feature_flag.name %></td>
+        <td><%= feature_flag.description %></td>
+        <td><%= feature_flag.enabled %></td>
+        <td><%= feature_flag.expires_at&.strftime('%Y-%m-%dT%H:%M') %></td>
+        <td><%= feature_flag.readable_milieus %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

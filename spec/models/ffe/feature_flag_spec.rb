@@ -128,4 +128,28 @@ RSpec.describe Ffe::FeatureFlag, type: :model do
       it { is_expected.to be_truthy }
     end
   end
+
+  describe '#readable_milieus' do
+    subject { feature_flag.allowed_milieu? }
+
+    describe "no milieu set (default '0000')" do
+      let(:feature_flag) { create(:feature_flag, name: 'dummy_of', milieu: '0000') }
+      specify { expect(feature_flag.readable_milieus).to eq 'no' }
+    end
+
+    describe "all milieu set (default '1111')" do
+      let(:feature_flag) { create(:feature_flag, name: 'dummy_of', milieu: '1110') }
+      specify { expect(feature_flag.readable_milieus).to eq 'all' }
+    end
+
+    describe "specific milieu set (default '1000')" do
+      let(:feature_flag) { create(:feature_flag, name: 'dummy_of', milieu: '1000') }
+      specify { expect(feature_flag.readable_milieus).to eq 'development' }
+    end
+
+    describe "specific milieu set (default '0110')" do
+      let(:feature_flag) { create(:feature_flag, name: 'dummy_of', milieu: '0110') }
+      specify { expect(feature_flag.readable_milieus).to eq 'staging, production' }
+    end
+  end
 end

@@ -17,7 +17,7 @@ module Ffe
     def edit; end
 
     def create
-      @feature_flag = ::Ffe::FeatureFlag.new(ffe_params)
+      @feature_flag = ::Ffe::FeatureFlag.new(feature_flag_params.except(:milieus))
 
       if @feature_flag.save
         redirect_to feature_flag_path(@feature_flag), notice: 'FFE wurde erstellt.'
@@ -27,7 +27,7 @@ module Ffe
     end
 
     def update
-      if @feature_flag.update(ffe_params)
+      if @feature_flag.update(feature_flag_params.except(:milieus))
         redirect_to feature_flag_path(@feature_flag), notice: 'FFE wurde aktualisiert.'
       else
         render :edit, status: :unprocessable_content
@@ -45,8 +45,10 @@ module Ffe
       @feature_flag = ::Ffe::FeatureFlag.find(params.expect(:id))
     end
 
-    def ffe_params
-      params.expect(feature_flag: %i[name description enabled])
+    def feature_flag_params
+      params.expect(feature_flag: [:name, :description, :enabled, :expires_at, { milieus: {} }]).tap do |params|
+        params[:milieu] = params[:milieus].values.join.ljust(Ffe.config.bitlength, '0') if params[:milieus].present?
+      end
     end
   end
 end
