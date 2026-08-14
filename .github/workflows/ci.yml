@@ -1,71 +1,60 @@
-name: CI
-
+# This workflow uses actions that are not certified by GitHub.  They are
+# provided by a third-party and are governed by separate terms of service,
+# privacy policy, and support documentation.
+#
+# This workflow will install a prebuilt Ruby version, install dependencies, and
+# run tests and linters.
+name: "Raile Engine CI"
 on:
-  pull_request:
   push:
-    branches: [ master ]
-
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 jobs:
-  lint:
+  rubocop:
     runs-on: ubuntu-latest
     env:
       RUBY_VERSION: 4.0.6
-      RUBOCOP_CACHE_ROOT: tmp/rubocop
+      RAILS_ENV: test
     steps:
       - name: Checkout code
-        uses: actions/checkout@v7
-
+        uses: actions/checkout@v4
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
 
-      - name: Prepare RuboCop cache
-        uses: actions/cache@v6
-        env:
-          DEPENDENCIES_HASH: ${{ hashFiles('**/.rubocop.yml', '**/.rubocop_todo.yml', 'Gemfile.lock') }}
-        with:
-          path: ${{ env.RUBOCOP_CACHE_ROOT }}
-          key: rubocop-${{ runner.os }}-${{ env.RUBY_VERSION }}-${{ env.DEPENDENCIES_HASH }}-${{ github.ref_name == github.event.repository.default_branch && github.run_id || 'default' }}
-          restore-keys: |
-            rubocop-${{ runner.os }}-${{ env.RUBY_VERSION }}-${{ env.DEPENDENCIES_HASH }}-
+      - name: Run rubocop
+        run: bin/rubocop --fail-fast --config .rubocop.yml
 
-      - name: Lint code for consistent style
-        run: bin/rubocop -f github
-
-  test:
+  rspec:
     runs-on: ubuntu-latest
-
-    # services:
-    #  redis:
-    #    image: valkey/valkey:8
-    #    ports:
-    #      - 6379:6379
-    #    options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
+    needs: ['rubocop']
+    services:
+      postgres:
+        image: postgres:18-alpine
+        ports:
+          - "5432:5432"
+        env:
+          POSTGRES_DB: rails_test
+          POSTGRES_USER: rails
+          POSTGRES_PASSWORD: password
+    env:
+      RUBY_VERSION: 4.0.6
+      RAILS_ENV: test
+      DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
     steps:
       - name: Checkout code
-        uses: actions/checkout@v7
-
+        uses: actions/checkout@v4
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 4.0.6
+          ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-
-      - name: Run tests
-        env:
-          RAILS_ENV: test
-          # RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          # REDIS_URL: redis://localhost:6379/0
-        run: |
-          bin/rails db:test:prepare
-          bin/rspec
-
-      - name: Keep screenshots from failed system tests
-        uses: actions/upload-artifact@v7
-        if: failure()
-        with:
-          name: screenshots
-          path: ${{ github.workspace }}/tmp/screenshots
-          if-no-files-found: ignore
+      - name: Set up database schema
+        run: bin/rails db:schema:load
+      - name: Generate binstubs
+        run: bundle binstubs rspec-core
+      - name: Run specs
+        run: bin/rspec

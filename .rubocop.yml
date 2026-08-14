@@ -9,6 +9,7 @@ AllCops:
     - 'bin/**/*'
     - 'config/**/*'
     - spec/dummy/db/schema.rb
+    - 'vendor/**/*'
   UseCache: true
   NewCops: enable
   SuggestExtensions: false
