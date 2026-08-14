@@ -3419,3 +3419,894 @@ Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.0ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.7ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:04:50.487469"], ["milieu", "0000"], ["created_at", "2026-08-14 09:04:50.487899"], ["updated_at", "2026-08-14 09:04:50.487899"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.4ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.5ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:08:32.053278"], ["milieu", "1000"], ["created_at", "2026-08-14 09:08:32.058462"], ["updated_at", "2026-08-14 09:08:32.058462"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:08:32.068238"], ["milieu", "0000"], ["created_at", "2026-08-14 09:08:32.068786"], ["updated_at", "2026-08-14 09:08:32.068786"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.6ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:11:03.549815"], ["milieu", "0000"], ["created_at", "2026-08-14 09:11:03.554385"], ["updated_at", "2026-08-14 09:11:03.554385"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:11:03.563646"], ["milieu", "1000"], ["created_at", "2026-08-14 09:11:03.564188"], ["updated_at", "2026-08-14 09:11:03.564188"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:11:03.565421"], ["milieu", "1000"], ["created_at", "2026-08-14 09:11:03.565869"], ["updated_at", "2026-08-14 09:11:03.565869"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.5ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "0000"], ["created_at", "2026-08-14 09:11:48.199606"], ["updated_at", "2026-08-14 09:11:48.199606"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "1000"], ["created_at", "2026-08-14 09:11:48.208985"], ["updated_at", "2026-08-14 09:11:48.208985"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.6ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "0000"], ["created_at", "2026-08-14 09:11:57.100072"], ["updated_at", "2026-08-14 09:11:57.100072"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "1000"], ["created_at", "2026-08-14 09:11:57.102114"], ["updated_at", "2026-08-14 09:11:57.102114"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.6ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:12:30.731849"], ["milieu", "0000"], ["created_at", "2026-08-14 09:12:30.736449"], ["updated_at", "2026-08-14 09:12:30.736449"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:12:30.745686"], ["milieu", "1000"], ["created_at", "2026-08-14 09:12:30.746224"], ["updated_at", "2026-08-14 09:12:30.746224"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.5ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.5ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:27:32.198095"], ["milieu", "1000"], ["created_at", "2026-08-14 09:27:32.203785"], ["updated_at", "2026-08-14 09:27:32.203785"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:27:32.205968"], ["milieu", "1000"], ["created_at", "2026-08-14 09:27:32.206463"], ["updated_at", "2026-08-14 09:27:32.206463"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:27:32.211717"], ["milieu", "1000"], ["created_at", "2026-08-14 09:27:32.212012"], ["updated_at", "2026-08-14 09:27:32.212012"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:27:32.212935"], ["milieu", "0000"], ["created_at", "2026-08-14 09:27:32.213260"], ["updated_at", "2026-08-14 09:27:32.213260"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.4ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.9ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:28:42.120247"], ["milieu", "1000"], ["created_at", "2026-08-14 09:28:42.120709"], ["updated_at", "2026-08-14 09:28:42.120709"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:28:42.122936"], ["milieu", "1000"], ["created_at", "2026-08-14 09:28:42.123413"], ["updated_at", "2026-08-14 09:28:42.123413"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:28:42.124670"], ["milieu", "0000"], ["created_at", "2026-08-14 09:28:42.125017"], ["updated_at", "2026-08-14 09:28:42.125017"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:28:42.126223"], ["milieu", "1000"], ["created_at", "2026-08-14 09:28:42.126587"], ["updated_at", "2026-08-14 09:28:42.126587"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.0ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.5ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:30:15.342816"], ["milieu", "1000"], ["created_at", "2026-08-14 09:30:15.347203"], ["updated_at", "2026-08-14 09:30:15.347203"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:30:15.357044"], ["milieu", "1000"], ["created_at", "2026-08-14 09:30:15.357587"], ["updated_at", "2026-08-14 09:30:15.357587"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:30:15.363641"], ["milieu", "0000"], ["created_at", "2026-08-14 09:30:15.363956"], ["updated_at", "2026-08-14 09:30:15.363956"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:30:15.364993"], ["milieu", "1000"], ["created_at", "2026-08-14 09:30:15.365351"], ["updated_at", "2026-08-14 09:30:15.365351"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.4ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.7ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:30:33.386027"], ["milieu", "1000"], ["created_at", "2026-08-14 09:30:33.390745"], ["updated_at", "2026-08-14 09:30:33.390745"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:30:33.399964"], ["milieu", "1000"], ["created_at", "2026-08-14 09:30:33.400473"], ["updated_at", "2026-08-14 09:30:33.400473"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:30:33.406019"], ["milieu", "0000"], ["created_at", "2026-08-14 09:30:33.406400"], ["updated_at", "2026-08-14 09:30:33.406400"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:30:33.407621"], ["milieu", "1000"], ["created_at", "2026-08-14 09:30:33.407974"], ["updated_at", "2026-08-14 09:30:33.407974"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.0ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.8ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:32:30.384654"], ["milieu", "0000"], ["created_at", "2026-08-14 09:32:30.385136"], ["updated_at", "2026-08-14 09:32:30.385136"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:32:30.387008"], ["milieu", "1000"], ["created_at", "2026-08-14 09:32:30.387422"], ["updated_at", "2026-08-14 09:32:30.387422"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:32:30.388510"], ["milieu", "1000"], ["created_at", "2026-08-14 09:32:30.388884"], ["updated_at", "2026-08-14 09:32:30.388884"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:32:30.390436"], ["milieu", "1000"], ["created_at", "2026-08-14 09:32:30.390788"], ["updated_at", "2026-08-14 09:32:30.390788"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.6ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.563384"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.567921"], ["updated_at", "2026-08-14 09:39:48.567921"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:39:48.577556"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.578106"], ["updated_at", "2026-08-14 09:39:48.578106"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.579723"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.580161"], ["updated_at", "2026-08-14 09:39:48.580161"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.581274"], ["milieu", "0000"], ["created_at", "2026-08-14 09:39:48.581712"], ["updated_at", "2026-08-14 09:39:48.581712"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.595153"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.595539"], ["updated_at", "2026-08-14 09:39:48.595539"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:39:48 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.7ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 4.3ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.626590"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.627077"], ["updated_at", "2026-08-14 09:39:48.627077"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/feature_flags/69" for 127.0.0.1 at 2026-08-14 11:39:48 +0200
+Processing by Ffe::FeatureFlagsController#update as HTML
+  Parameters: {"feature_flag" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-21 09:39:48 UTC", "milieu" => "1000"}, "id" => "69"}
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 AND "feature_flags"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 69], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Update (0.4ms)[0m  [1m[33mUPDATE "feature_flags" SET "name" = $1, "updated_at" = $2 WHERE "feature_flags"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-14 09:39:48.632200"], ["id", 69]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/69
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.635173"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.635531"], ["updated_at", "2026-08-14 09:39:48.635531"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started DELETE "/ffe/feature_flags/70" for 127.0.0.1 at 2026-08-14 11:39:48 +0200
+Processing by Ffe::FeatureFlagsController#destroy as HTML
+  Parameters: {"id" => "70"}
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Destroy (0.2ms)[0m  [1m[31mDELETE FROM "feature_flags" WHERE "feature_flags"."id" = $1[0m  [["id", 70]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:39:48.639540"], ["milieu", "1000"], ["created_at", "2026-08-14 09:39:48.639922"], ["updated_at", "2026-08-14 09:39:48.639922"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started POST "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:39:48 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"feature_flag" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-21 09:39:48 UTC", "milieu" => "1000"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "0000"], ["created_at", "2026-08-14 09:39:48.641586"], ["updated_at", "2026-08-14 09:39:48.641586"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/72
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.0ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.5ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.618166"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.622380"], ["updated_at", "2026-08-14 09:40:05.622380"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:40:05 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.8ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.645378"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.645937"], ["updated_at", "2026-08-14 09:40:05.645937"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/feature_flags/74" for 127.0.0.1 at 2026-08-14 11:40:05 +0200
+Processing by Ffe::FeatureFlagsController#update as HTML
+  Parameters: {"feature_flag" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-21 09:40:05 UTC", "milieu" => "1000"}, "id" => "74"}
+  [1m[36mFfe::FeatureFlag Load (0.4ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 AND "feature_flags"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 74], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Update (0.6ms)[0m  [1m[33mUPDATE "feature_flags" SET "name" = $1, "updated_at" = $2 WHERE "feature_flags"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-14 09:40:05.652743"], ["id", 74]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/74
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.656276"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.656725"], ["updated_at", "2026-08-14 09:40:05.656725"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started DELETE "/ffe/feature_flags/75" for 127.0.0.1 at 2026-08-14 11:40:05 +0200
+Processing by Ffe::FeatureFlagsController#destroy as HTML
+  Parameters: {"id" => "75"}
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Destroy (0.2ms)[0m  [1m[31mDELETE FROM "feature_flags" WHERE "feature_flags"."id" = $1[0m  [["id", 75]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags
+Completed 302 Found in 1ms (ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.660914"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.661364"], ["updated_at", "2026-08-14 09:40:05.661364"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started POST "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:40:05 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"feature_flag" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-21 09:40:05 UTC", "milieu" => "1000"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "0000"], ["created_at", "2026-08-14 09:40:05.663173"], ["updated_at", "2026-08-14 09:40:05.663173"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/77
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.1ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:40:05.666056"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.666551"], ["updated_at", "2026-08-14 09:40:05.666551"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.1ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.667809"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.668170"], ["updated_at", "2026-08-14 09:40:05.668170"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.683296"], ["milieu", "0000"], ["created_at", "2026-08-14 09:40:05.683896"], ["updated_at", "2026-08-14 09:40:05.683896"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:40:05.685379"], ["milieu", "1000"], ["created_at", "2026-08-14 09:40:05.685768"], ["updated_at", "2026-08-14 09:40:05.685768"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (1.0ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.6ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.617190"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.621502"], ["updated_at", "2026-08-14 09:41:05.621502"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started POST "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:41:05 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"feature_flag" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-21 09:41:05 UTC", "milieu" => "1000"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "0000"], ["created_at", "2026-08-14 09:41:05.639680"], ["updated_at", "2026-08-14 09:41:05.639680"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/83
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mFfe::FeatureFlag Load (0.7ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.643983"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.644476"], ["updated_at", "2026-08-14 09:41:05.644476"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started DELETE "/ffe/feature_flags/84" for 127.0.0.1 at 2026-08-14 11:41:05 +0200
+Processing by Ffe::FeatureFlagsController#destroy as HTML
+  Parameters: {"id" => "84"}
+  [1m[36mFfe::FeatureFlag Load (0.4ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Destroy (0.5ms)[0m  [1m[31mDELETE FROM "feature_flags" WHERE "feature_flags"."id" = $1[0m  [["id", 84]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.648574"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.649017"], ["updated_at", "2026-08-14 09:41:05.649017"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:41:05 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.2ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.660056"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.660593"], ["updated_at", "2026-08-14 09:41:05.660593"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/feature_flags/86" for 127.0.0.1 at 2026-08-14 11:41:05 +0200
+Processing by Ffe::FeatureFlagsController#update as HTML
+  Parameters: {"feature_flag" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-21 09:41:05 UTC", "milieu" => "1000"}, "id" => "86"}
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 AND "feature_flags"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 86], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Update (0.3ms)[0m  [1m[33mUPDATE "feature_flags" SET "name" = $1, "updated_at" = $2 WHERE "feature_flags"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-14 09:41:05.662910"], ["id", 86]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/86
+Completed 302 Found in 2ms (ActiveRecord: 1.0ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:41:05.665009"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.665420"], ["updated_at", "2026-08-14 09:41:05.665420"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.667059"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.667445"], ["updated_at", "2026-08-14 09:41:05.667445"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.4ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.683424"], ["milieu", "1000"], ["created_at", "2026-08-14 09:41:05.683890"], ["updated_at", "2026-08-14 09:41:05.683890"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:41:05.685418"], ["milieu", "0000"], ["created_at", "2026-08-14 09:41:05.685799"], ["updated_at", "2026-08-14 09:41:05.685799"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Generating image variants require the image_processing gem. Please add `gem "image_processing", "~> 2.0"` to your Gemfile or set `config.active_storage.variant_processor = :disabled`.
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [["$1", "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.7ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.7ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.7ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.583003"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.583455"], ["updated_at", "2026-08-14 09:43:57.583455"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy"], ["description", nil], ["enabled", true], ["expires_at", "2026-08-21 09:43:57.585698"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.586099"], ["updated_at", "2026-08-14 09:43:57.586099"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Load (0.1ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.587474"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.587826"], ["updated_at", "2026-08-14 09:43:57.587826"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "dummy_of"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "dummy_of"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.588832"], ["milieu", "0000"], ["created_at", "2026-08-14 09:43:57.589249"], ["updated_at", "2026-08-14 09:43:57.589249"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.591072"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.591417"], ["updated_at", "2026-08-14 09:43:57.591417"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started POST "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:43:57 +0200
+Processing by Ffe::FeatureFlagsController#create as HTML
+  Parameters: {"feature_flag" => {"name" => "Beta", "enabled" => "false", "expires_at" => "2026-08-21 09:43:57 UTC", "milieu" => "1000"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Beta"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.4ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Beta"], ["description", nil], ["enabled", false], ["expires_at", nil], ["milieu", "0000"], ["created_at", "2026-08-14 09:43:57.613652"], ["updated_at", "2026-08-14 09:43:57.613652"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/96
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mFfe::FeatureFlag Load (0.7ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.618188"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.618579"], ["updated_at", "2026-08-14 09:43:57.618579"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/ffe/feature_flags/97" for 127.0.0.1 at 2026-08-14 11:43:57 +0200
+Processing by Ffe::FeatureFlagsController#update as HTML
+  Parameters: {"feature_flag" => {"name" => "Gamma", "enabled" => "false", "expires_at" => "2026-08-21 09:43:57 UTC", "milieu" => "1000"}, "id" => "97"}
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.3ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 AND "feature_flags"."id" != $2 LIMIT $3[0m  [["name", "Gamma"], ["id", 97], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Update (0.6ms)[0m  [1m[33mUPDATE "feature_flags" SET "name" = $1, "updated_at" = $2 WHERE "feature_flags"."id" = $3[0m  [["name", "Gamma"], ["updated_at", "2026-08-14 09:43:57.620890"], ["id", 97]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags/97
+Completed 302 Found in 2ms (ActiveRecord: 1.3ms (3 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.3ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.623407"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.623741"], ["updated_at", "2026-08-14 09:43:57.623741"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+Started DELETE "/ffe/feature_flags/98" for 127.0.0.1 at 2026-08-14 11:43:57 +0200
+Processing by Ffe::FeatureFlagsController#destroy as HTML
+  Parameters: {"id" => "98"}
+  [1m[36mFfe::FeatureFlag Load (0.2ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" WHERE "feature_flags"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Destroy (0.2ms)[0m  [1m[31mDELETE FROM "feature_flags" WHERE "feature_flags"."id" = $1[0m  [["id", 98]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ffe/feature_flags
+Completed 302 Found in 1ms (ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mFfe::FeatureFlag Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "feature_flags"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFfe::FeatureFlag Pluck (0.1ms)[0m  [1m[34mSELECT "feature_flags"."id" FROM "feature_flags" WHERE "feature_flags"."name" = $1 LIMIT $2[0m  [["name", "Alpha"], ["LIMIT", 1]]
+  [1m[36mFfe::FeatureFlag Create (0.2ms)[0m  [1m[32mINSERT INTO "feature_flags" ("name", "description", "enabled", "expires_at", "milieu", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alpha"], ["description", nil], ["enabled", false], ["expires_at", "2026-08-21 09:43:57.626602"], ["milieu", "1000"], ["created_at", "2026-08-14 09:43:57.626924"], ["updated_at", "2026-08-14 09:43:57.626924"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ffe/feature_flags" for 127.0.0.1 at 2026-08-14 11:43:57 +0200
+Processing by Ffe::FeatureFlagsController#index as HTML
+  Rendering layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb
+  Rendering /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application
+  [1m[36mFfe::FeatureFlag Load (0.3ms)[0m  [1m[34mSELECT "feature_flags".* FROM "feature_flags" ORDER BY "feature_flags"."created_at" DESC[0m
+  Rendered /Users/le_fnord/sandbox/github/ffe/app/views/ffe/feature_flags/index.html.erb within layouts/ffe/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout /Users/le_fnord/sandbox/github/ffe/app/views/layouts/ffe/application.html.erb (Duration: 11.9ms | GC: 9.3ms)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 9.3ms)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m

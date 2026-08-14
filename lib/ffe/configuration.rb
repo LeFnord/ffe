@@ -2,11 +2,10 @@
 
 module Ffe
   class Configuration
-    attr_accessor :enabled, :milieus, :env_variable
+    attr_accessor :milieus, :env_variable
 
     def initialize
-      @enabled = false
-      @milieus = { development: 0, testing: 1, staging: 2, production: 3 }
+      @milieus = { development: 0, staging: 1, production: 2 }
       @env_variable = 'RAILS_ENV'
     end
   end

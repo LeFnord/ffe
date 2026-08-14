@@ -7,8 +7,7 @@ RSpec.describe Ffe::Configuration do
     specify do
       config = described_class.new
 
-      expect(config.enabled).to be(false)
-      expect(config.milieus).to eq({ development: 0, testing: 1, staging: 2, production: 3 })
+      expect(config.milieus).to eq({ development: 0, staging: 1, production: 2 })
       expect(config.env_variable).to eq('RAILS_ENV')
     end
   end

@@ -21,7 +21,9 @@ RSpec.describe 'FeatureFlags', type: :request do
   end
 
   specify 'updates a ffe' do
-    patch "/ffe/feature_flags/#{feature_flag.id}", params: { feature_flag: attributes_for(:feature_flag, name: 'Gamma') }
+    patch "/ffe/feature_flags/#{feature_flag.id}", params: {
+      feature_flag: attributes_for(:feature_flag, name: 'Gamma')
+    }
 
     expect(response).to redirect_to("/ffe/feature_flags/#{feature_flag.id}")
     expect(feature_flag.reload.name).to eq('Gamma')
