@@ -152,4 +152,61 @@ RSpec.describe Ffe::FeatureFlag, type: :model do
       specify { expect(feature_flag.readable_milieus).to eq 'staging, production' }
     end
   end
+
+  describe 'expires_at do handling' do
+    describe '#handle_change_job' do
+      subject { ffe.handle_change_job }
+
+      describe 'after create' do
+        describe 'expires_at given' do
+          let!(:ffe) { create(:feature_flag, name: 'expires_at_missing', expires_at: 2.days.from_now) }
+
+          specify do
+            expect(ffe).to receive(:create_job)
+            subject
+          end
+        end
+
+        describe 'expires_at missing' do
+          let!(:ffe) { create(:feature_flag, name: 'expires_at_missing', expires_at: nil) }
+
+          specify do
+            expect(ffe).not_to receive(:create_job)
+            subject
+          end
+        end
+      end
+    end
+
+    describe '#create_job' do
+      subject { ffe.create_job }
+
+      describe 'not enqueing job' do
+        let(:ffe) { create(:feature_flag, name: 'create_job', expires_at: nil) }
+
+        specify do
+          expect { subject }.not_to have_enqueued_job(Ffe::ExpiredHandlingJob).with(ffe.name.to_sym)
+        end
+      end
+
+      describe 'enqueing job and stores id' do
+        let(:ffe) { create(:feature_flag, name: 'create_job', expires_at: 1.day.from_now) }
+
+        specify do
+          expect { subject }.to have_enqueued_job(Ffe::ExpiredHandlingJob).with(ffe.name)
+          expect(ffe.reload.job_id).to be_present
+        end
+      end
+    end
+
+    describe '#destroy_job' do
+      describe '' do
+        let(:ffe) { create(:feature_flag, name: 'destroy_job', expires_at: 1.day.from_now) }
+
+        specify do
+          ffe.update(expires_at: nil)
+        end
+      end
+    end
+  end
 end

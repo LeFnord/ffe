@@ -10,7 +10,7 @@ require 'rspec/rails'
 require 'factory_bot_rails'
 
 FactoryBot.definition_file_paths = [File.expand_path('factories', __dir__)]
-FactoryBot.find_definitions
+FactoryBot.reload
 
 ActiveRecord::Migrator.migrations_paths = [File.expand_path('../db/migrate', __dir__)]
 ActiveRecord::Migration.maintain_test_schema!
@@ -23,4 +23,11 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
   config.include FactoryBot::Syntax::Methods
+  config.include ActiveJob::TestHelper
+
+  config.before do
+    ActiveJob::Base.queue_adapter = :test
+    clear_enqueued_jobs
+    clear_performed_jobs
+  end
 end

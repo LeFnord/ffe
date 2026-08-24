@@ -19,6 +19,8 @@ ActiveRecord::Schema[8.2].define(version: 2026_08_14_160209) do
     t.string "description"
     t.boolean "enabled", default: false
     t.datetime "expires_at"
+    t.string "job_id"
+    t.string "string"
     t.bit "milieu", limit: 4, default: "0000"
     t.text "user_ids", default: [], array: true
     t.datetime "created_at", null: false

@@ -23,4 +23,8 @@ Ffe.configure do |config|
 
   # not all rails apps are using RAILS_ENV variable to set it
   config.env_variable = 'RAILS_ENV'
+
+  # set the active job adapter,
+  # needed if you want to use the Ffe::ExpiredHandlingJob
+  config.queue_adapter = ActiveJob::Base.queue_adapter_name.to_sym
 end
