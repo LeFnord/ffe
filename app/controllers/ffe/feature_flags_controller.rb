@@ -47,10 +47,11 @@ module Ffe
 
     def feature_flag_params
       params.expect(
-        feature_flag: [:name, :description, :enabled, :expires_at, :clear_expires_at, { milieus: {} }]
+        feature_flag: [:name, :description, :enabled, :expires_at, :clear_expires_at, { user_ids: [], milieus: {} }]
       ).tap do |params|
         params[:milieu] = params[:milieus].values.join.ljust(Ffe.config.bitlength, '0') if params[:milieus].present?
         params[:expires_at] = nil if params[:clear_expires_at] == '1'
+        params[:user_ids]&.delete_if(&:blank?)
       end
     end
   end

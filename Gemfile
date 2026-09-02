@@ -18,7 +18,6 @@ gem 'propshaft'
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"
 group :development, :test do
-  # gem 'awesome_print'
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
   gem 'factory_bot_rails'

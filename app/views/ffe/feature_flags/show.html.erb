@@ -17,5 +17,10 @@
   <%= @feature_flag.readable_milieus %>
 </div>
 
+<div>
+  <strong>User IDs:</strong>
+  <%= @feature_flag.user_ids %>
+</div>
+
 <p><%= link_to "Bearbeiten", edit_feature_flag_path(@feature_flag) %></p>
 <p><%= link_to "Zurück", feature_flags_path %></p>
