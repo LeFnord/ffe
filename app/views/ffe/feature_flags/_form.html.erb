@@ -44,6 +44,11 @@
   </div>
 
   <div>
+    <%= form.label :user_ids %>
+    <%= form.collection_select :user_ids, Ffe::User.all, :id, :name, { include_blank: true, multiple: true } %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
