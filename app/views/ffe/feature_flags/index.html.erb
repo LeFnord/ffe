@@ -1,6 +1,7 @@
 <h1>Feature Flags</h1>
 
-<p><%= link_to "Neues Feature Flag anlegen", new_feature_flag_path %></p>
+<div><%= link_to "Neues Feature Flag anlegen", new_feature_flag_path %></div>
+<div><%= link_to t('actions.dump'), dump_feature_flags_path, download: 'feature_flags.json' %></div>
 
 <table>
   <thead>

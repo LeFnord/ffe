@@ -39,6 +39,10 @@ module Ffe
       redirect_to feature_flags_path, notice: 'FFE wurde gelöscht.'
     end
 
+    def dump
+      render json: Ffe::FeatureFlag.order(:name).map { |ff| ff.attributes.slice('name', 'description', 'enabled', 'milieu', 'expires_at', 'percentage') }
+    end
+
     private
 
     def set_ffe
