@@ -29,3 +29,19 @@ Ffe.configure do |config|
   # actual supported: :solid_queue, :sidekiq
   config.queue_adapter = ActiveJob::Base.queue_adapter_name.to_sym
 end
+
+
+Rails.configuration.after_initialize do
+  if ActiveRecord::Base.connection.table_exists?(:feature_flags)
+    path = Rails.root.join('config/feature_flags.json')
+    next unless File.exist?(path)
+
+    data = JSON.load_file(path)
+    data.each do |flag|
+      name = flag.delete('name')
+      next if Ffe::FeatureFlag.exists?(name: name)
+
+      Ffe::FeatureFlag.create_with(flag).find_or_create_by(name: name)
+    end
+  end
+end

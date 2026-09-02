@@ -11,6 +11,7 @@ module Ffe
 
       def copy_initializer
         template 'ffe_initializer.rb.tt', 'config/initializers/ffe.rb'
+        template 'feature_flags.json.tt', 'config/feature_flags.json'
       end
     end
   end
