@@ -56,15 +56,15 @@ Run your app and go to [http://localhost:3000/ffe/feature_flags](http://localhos
 
 1. general usage, respecting only the environment
     ```rb
-   FeatureFlag.enabled?(:flag)
+   Ffe::FeatureFlag.enabled?(:flag)
    # or
-   FeatureFlag.disabled?(:flag)
+   Ffe::FeatureFlag.disabled?(:flag)
    ```
   
 
 2. check if a user is allowed
     ```rb
-    FeatureFlag.enabled_for?(:flag, user: current_user)
+    Ffe::FeatureFlag.enabled_for?(:flag, user: current_user)
     ```
 
 ## Usage Scenarios

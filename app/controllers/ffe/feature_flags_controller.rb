@@ -5,19 +5,19 @@ module Ffe
     before_action :set_ffe, only: %i[show edit update destroy]
 
     def index
-      @feature_flags = ::Ffe::FeatureFlag.order(created_at: :desc)
+      @feature_flags = Ffe::FeatureFlag.order(created_at: :desc)
     end
 
     def show; end
 
     def new
-      @feature_flag = ::Ffe::FeatureFlag.new
+      @feature_flag = Ffe::FeatureFlag.new
     end
 
     def edit; end
 
     def create
-      @feature_flag = ::Ffe::FeatureFlag.new(feature_flag_params.except(:milieus, :clear_expires_at))
+      @feature_flag = Ffe::FeatureFlag.new(feature_flag_params.except(:milieus, :clear_expires_at))
 
       if @feature_flag.save
         redirect_to feature_flag_path(@feature_flag), notice: 'FFE wurde erstellt.'
@@ -46,7 +46,7 @@ module Ffe
     private
 
     def set_ffe
-      @feature_flag = ::Ffe::FeatureFlag.find(params.expect(:id))
+      @feature_flag = Ffe::FeatureFlag.find(params.expect(:id))
     end
 
     def feature_flag_params
