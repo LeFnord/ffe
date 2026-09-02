@@ -2,6 +2,10 @@
 
 - contributions
 
+### 1.0.1 -- 03.09.2026
+
+No code changes.
+
 ### 1.0.0 -- 03.09.2026
 
 - [5b883e5](https://gitlab.kws.de/rddm/ldm/-/commit/5b883e567f9cd9351656579c6f4ddc13f2e99914) - Adds initial feature flags and load it in the improved initializer. (#17)
