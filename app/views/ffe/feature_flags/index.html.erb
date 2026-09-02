@@ -1,7 +1,7 @@
 <h1>Feature Flags</h1>
 
-<div><%= link_to "Neues Feature Flag anlegen", new_feature_flag_path %></div>
-<div><%= link_to t('actions.dump'), dump_feature_flags_path, download: 'feature_flags.json' %></div>
+<div><%= link_to 'Neues Feature Flag anlegen', new_feature_flag_path %></div>
+<div><%= link_to 'dump', dump_feature_flags_path, download: 'feature_flags.json' %></div>
 
 <table>
   <thead>
@@ -23,8 +23,8 @@
         <td><%= feature_flag.expires_at&.strftime('%Y-%m-%dT%H:%M') %></td>
         <td><%= feature_flag.readable_milieus %></td>
         <td>
-          <%= link_to "Bearbeiten", edit_feature_flag_path(feature_flag) %>
-          <%= button_to "Löschen", feature_flag_path(feature_flag), method: :delete %>
+          <%= link_to 'Bearbeiten', edit_feature_flag_path(feature_flag) %>
+          <%= button_to 'Löschen', feature_flag_path(feature_flag), method: :delete %>
         </td>
       </tr>
     <% end %>
