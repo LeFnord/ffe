@@ -42,11 +42,15 @@ Lint/MissingSuper:
 #
 # *** Metrics
 #
+Metrics/AbcSize:
+  Max: 23
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 Metrics/ClassLength:
   Max: 120
+Metrics/MethodLength:
+  Max: 15
 Metrics/ModuleLength:
   Max: 120
 

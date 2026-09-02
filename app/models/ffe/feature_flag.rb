@@ -2,10 +2,22 @@
 
 module Ffe
   class FeatureFlag < ApplicationRecord
+    if Ffe.config.queue_adapter == :solid_queue
+      include SolidQueueAdapter
+    elsif Ffe.config.queue_adapter == :sidekiq
+      include SidekiqAdapter
+    end
+
     self.table_name = 'feature_flags'
 
+    # validations
+    #
     validates :name, presence: true, uniqueness: true, format: { with: /\A[a-zA-Z_\d]+\z/ }
     validates :expires_at, comparison: { greater_than: Time.current.end_of_day }, if: -> { expires_at.present? && expires_at_changed? } # rubocop:disable Layout/LineLength
+
+    # callbacks
+    after_save_commit :handle_change_job, unless: -> { Rails.env.test? }
+    before_destroy :destroy_job
 
     # the Flag functionality itself
     #
@@ -39,13 +51,55 @@ module Ffe
       milieu[pos] == '1'
     end
 
-    def readable_milieus # rubocop:disable Metrics/AbcSize
+    def readable_milieus
       relevant = milieu.to_s.ljust(Ffe.config.milieus.length, '0').chars.first(Ffe.config.milieus.length)
       return 'all' if relevant.all? { |m| m == '1' }
       return 'no' if relevant.all? { |m| m == '0' }
 
       inverted = Ffe.config.milieus.invert
       relevant.each_with_index.filter_map { |m, i| inverted[i] if m == '1' }.join(', ')
+    end
+
+    # ExpiresAt related methods
+    #
+    # handles changes and decide to update or to destroy the job
+    def handle_change_job
+      if expires_at.present? && job_id.blank?
+        create_job
+      elsif expires_at.present? && job_id.present?
+        update_job
+      elsif expires_at.blank? && job_id.present?
+        destroy_job
+      end
+    end
+
+    # 1. create job if expires_at set
+    def create_job
+      return if expires_at.blank?
+
+      job = Ffe::ExpiredHandlingJob.set(wait_until: expires_at).perform_later(name)
+      update_columns(job_id: job.job_id, touch: true) # rubocop:disable Rails/SkipsModelValidations
+    end
+
+    # 2. update job if expires_at changed
+    def update_job
+      return unless job_id.present? && expires_at.present?
+      return create_job unless job
+
+      adapter_update_job if job
+    end
+
+    # 3. delete job if expires_at changed to empty, or FF was destroyed
+    def destroy_job
+      return if job_id.blank?
+
+      adapter_destroy_job if job
+
+      update_columns(job_id: nil, touch: true) unless destroyed? # rubocop:disable Rails/SkipsModelValidations
+    end
+
+    def job
+      adapter_job.presence
     end
   end
 end

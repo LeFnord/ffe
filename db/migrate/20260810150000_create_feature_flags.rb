@@ -5,6 +5,7 @@ class CreateFeatureFlags < ActiveRecord::Migration[8.2]
       t.string :description
       t.boolean :enabled, default: false
       t.datetime :expires_at
+      t.string :job_id
       t.column :milieu, "bit(#{Ffe.config.bitlength})", default: ''.ljust(Ffe.config.bitlength, '0') # only for PG
       t.text :user_ids, array: true, default: []
 
