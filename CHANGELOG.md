@@ -2,6 +2,11 @@
 
 - contributions
 
+### 1.0.0 -- 03.09.2026
+
+- [5b883e5](https://gitlab.kws.de/rddm/ldm/-/commit/5b883e567f9cd9351656579c6f4ddc13f2e99914) - Adds initial feature flags and load it in the improved initializer. (#17)
+- [f10dc76](https://gitlab.kws.de/rddm/ldm/-/commit/f10dc76f4e859af88bdc573defdca688532bd8e9) - Adds user handling in controller. (#16)
+
 ### 0.2.0 -- 02.09.2026
 
 - [7f27e8a](https://gitlab.kws.de/rddm/ldm/-/commit/7f27e8a71c9c7672e3b613182fae6556d3fbfe53) - Adds expires at handler job. (#14)
