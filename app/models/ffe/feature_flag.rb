@@ -2,6 +2,12 @@
 
 module Ffe
   class FeatureFlag < ApplicationRecord
+    if Ffe.config.queue_adapter == :solid_queue
+      include SolidQueueAdapter
+    elsif Ffe.config.queue_adapter == :sidekiq
+      include SidekiqAdapter
+    end
+
     self.table_name = 'feature_flags'
 
     # validations
@@ -80,42 +86,20 @@ module Ffe
       return unless job_id.present? && expires_at.present?
       return create_job unless job
 
-      case Ffe.config.queue_adapter
-      when :solid_queue
-        job.update(scheduled_at: expires_at)
-        se = SolidQueue::ScheduledExecution.find_by(job_id: job.id)
-        se.update(scheduled_at: expires_at)
-      when :sidekiq
-        destroy_job
-        create_job
-      end
+      adapter_update_job if job
     end
 
-    # 3. delete job if expires_at changed to empty
+    # 3. delete job if expires_at changed to empty, or FF was destroyed
     def destroy_job
       return if job_id.blank?
 
-      case Ffe.config.queue_adapter
-      when :solid_queue
-        job.presence&.discard
-      when :sidekiq
-        job.presence&.delete
-      end
+      adapter_destroy_job if job
 
       update_columns(job_id: nil, touch: true) unless destroyed? # rubocop:disable Rails/SkipsModelValidations
     end
 
     def job
-      case Ffe.config.queue_adapter
-      when :solid_queue
-        SolidQueue::Job.scheduled.find_by(active_job_id: job_id)
-      when :sidekiq
-        Sidekiq::ScheduledSet.new.find do |job|
-          job.item.dig('args', 0, 'job_id') == job_id
-        end
-      else
-        false
-      end
+      adapter_job.presence
     end
   end
 end
