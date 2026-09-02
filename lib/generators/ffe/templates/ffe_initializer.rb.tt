@@ -26,5 +26,6 @@ Ffe.configure do |config|
 
   # set the active job adapter,
   # needed if you want to use the Ffe::ExpiredHandlingJob
+  # actual supported: :solid_queue, :sidekiq
   config.queue_adapter = ActiveJob::Base.queue_adapter_name.to_sym
 end
