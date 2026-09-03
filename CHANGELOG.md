@@ -2,6 +2,11 @@
 
 - contributions
 
+### 1.1.0 -- 03.09.2026
+
+- [1adb876](https://gitlab.kws.de/rddm/ldm/-/commit/1adb8766da70282b2179572df421fa88708d6249) - Improves adapter handling. (#21)
+- [308d7ca](https://gitlab.kws.de/rddm/ldm/-/commit/308d7ca97ccdcc37c5ce2eac26f5167c928792bc) - Experimental: Adds manual release action. (#19)
+
 ### 1.0.1 -- 03.09.2026
 
 No code changes.
