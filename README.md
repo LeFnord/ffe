@@ -93,7 +93,7 @@ Run your app and go to [http://localhost:3000/ffe/feature_flags](http://localhos
 
 **Use Case**: Set a feature flag for an announcement, or something similar, for a specific period of time.
 
-> This requires the use of ActiveJob; currently, only `SolidQueue` and `Sidekiq` are supported. But feel free to add more.
+> This requires the use of ActiveJob; currently, only `SolidQueue` and `Sidekiq` adapters are supported. But feel free to add more.
 
 1. Create a feature flag in production, but without setting the expires date.
 2. Dump the flags, then replace the `config/feature_flags.json` file locally and commit it.
