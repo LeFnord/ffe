@@ -2,10 +2,13 @@
 
 module Ffe
   class FeatureFlag < ApplicationRecord
-    if Ffe.config.queue_adapter == :solid_queue
+    case Ffe.config.queue_adapter
+    when :solid_queue
       include SolidQueueAdapter
-    elsif Ffe.config.queue_adapter == :sidekiq
+    when :sidekiq
       include SidekiqAdapter
+    else
+      include AsyncAdapter
     end
 
     self.table_name = 'feature_flags'
@@ -16,7 +19,7 @@ module Ffe
     validates :expires_at, comparison: { greater_than: Time.current.end_of_day }, if: -> { expires_at.present? && expires_at_changed? } # rubocop:disable Layout/LineLength
 
     # callbacks
-    after_save_commit :handle_change_job, unless: -> { Rails.env.test? }
+    after_save_commit :handle_change_job, if: -> { %i[solid_queue sidekiq].include?(Ffe.config.queue_adapter) }
     before_destroy :destroy_job
 
     # the Flag functionality itself
