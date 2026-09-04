@@ -20,7 +20,7 @@ module Ffe
       @feature_flag = Ffe::FeatureFlag.new(feature_flag_params.except(:milieus, :clear_expires_at))
 
       if @feature_flag.save
-        redirect_to feature_flag_path(@feature_flag), notice: 'FFE wurde erstellt.'
+        redirect_to feature_flag_path(@feature_flag), notice: 'FFE created.'
       else
         render :new, status: :unprocessable_content
       end
@@ -28,7 +28,7 @@ module Ffe
 
     def update
       if @feature_flag.update(feature_flag_params.except(:milieus, :clear_expires_at))
-        redirect_to feature_flag_path(@feature_flag), notice: 'FFE wurde aktualisiert.'
+        redirect_to feature_flag_path(@feature_flag), notice: 'FFE updated.'
       else
         render :edit, status: :unprocessable_content
       end
@@ -36,11 +36,11 @@ module Ffe
 
     def destroy
       @feature_flag.destroy
-      redirect_to feature_flags_path, notice: 'FFE wurde gelöscht.'
+      redirect_to feature_flags_path, notice: 'FFE destroyed.'
     end
 
     def dump
-      render json: Ffe::FeatureFlag.order(:name).map { |ff| ff.attributes.slice('name', 'description', 'enabled', 'milieu', 'expires_at', 'percentage') }
+      render json: Ffe::FeatureFlag.order(:name).map { |ff| ff.attributes.slice('name', 'description', 'enabled', 'milieu', 'expires_at') }
     end
 
     private
