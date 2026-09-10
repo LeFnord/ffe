@@ -41,7 +41,7 @@ $ bin/rails db:migrate
 
 Mount the engine in your application's `config/routes.rb` file:
 ```ruby
-mount Ffe::Engine => "/feature_flags"
+mount Ffe::Engine => "/ffe"
 ```
 
 ### Views

@@ -4,6 +4,6 @@
     "description": "A general testing FF.",
     "enabled": true,
     "milieu": "1000",
-    "expires_at": null,
+    "expires_at": null
   }
 ]
