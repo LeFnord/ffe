@@ -2,6 +2,13 @@
 
 - contributions
 
+### 1.1.1 -- 10.09.2026
+
+- [d233f16](https://gitlab.kws.de/rddm/ldm/-/commit/d233f164f45219eaf12d66b2f8dbf6d20cc708b2) - Fixes some typos. (#26)
+- [6814296](https://gitlab.kws.de/rddm/ldm/-/commit/681429612d0b695dc9b1460bad52ee0e2399c2f8) - Corrects some typos. (#25)
+- [b71e4c5](https://gitlab.kws.de/rddm/ldm/-/commit/b71e4c5d26ce6a56a7f8d7ad5cc0ac0da92190f7) - Bump rails from `ce87702` to `2dc3c0d` (#24)
+- [752270d](https://gitlab.kws.de/rddm/ldm/-/commit/752270d845b46ba2cb898059f22505d310f1c4db) - Bump actions/checkout from 6 to 7 (#23)
+
 ### 1.1.0 -- 03.09.2026
 
 - [1adb876](https://gitlab.kws.de/rddm/ldm/-/commit/1adb8766da70282b2179572df421fa88708d6249) - Improves adapter handling. (#21)
