@@ -2,6 +2,10 @@
 
 - contributions
 
+### 1.2.0 -- 15.09.2026
+
+- [1ee230b](https://gitlab.kws.de/rddm/ldm/-/commit/1ee230bf080985201b719e6fc054fa1f0cd7f9c0) - Fixes: Customizing views as recommended. (#29)
+
 ### 1.1.1 -- 10.09.2026
 
 - [d233f16](https://gitlab.kws.de/rddm/ldm/-/commit/d233f164f45219eaf12d66b2f8dbf6d20cc708b2) - Fixes some typos. (#26)
