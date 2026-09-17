@@ -2,6 +2,10 @@
 
 - contributions
 
+### 1.2.1 -- 17.09.2026
+
+- [5d3c29f](https://gitlab.kws.de/rddm/ldm/-/commit/5d3c29f0d0ebacdb5ad0c3c68e7713495d461ece) - Respects requestet response format, added turbo. (#31)
+
 ### 1.2.0 -- 15.09.2026
 
 - [1ee230b](https://gitlab.kws.de/rddm/ldm/-/commit/1ee230bf080985201b719e6fc054fa1f0cd7f9c0) - Fixes: Customizing views as recommended. (#29)
