@@ -1,7 +1,7 @@
 <h1>Feature Flags</h1>
 
-<div><%= link_to 'Neues Feature Flag anlegen', new_feature_flag_path %></div>
-<div><%= link_to 'dump', dump_feature_flags_path, download: 'feature_flags.json' %></div>
+<div class="block"><%= link_to 'Neues Feature Flag anlegen', new_feature_flag_path %></div>
+<div class="block"><%= link_to 'dump', dump_feature_flags_path, download: 'feature_flags.json' %></div>
 
 <table>
   <thead>
@@ -14,19 +14,9 @@
       <th>Actions</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody id="feature_flags">
     <% @feature_flags.each do |feature_flag| %>
-      <tr>
-        <td><%= link_to feature_flag.name, feature_flag_path(feature_flag) %></td>
-        <td><%= feature_flag.description %></td>
-        <td><%= feature_flag.enabled %></td>
-        <td><%= feature_flag.expires_at&.strftime('%Y-%m-%dT%H:%M') %></td>
-        <td><%= feature_flag.readable_milieus %></td>
-        <td>
-          <%= link_to 'Bearbeiten', edit_feature_flag_path(feature_flag) %>
-          <%= button_to 'Löschen', feature_flag_path(feature_flag), method: :delete %>
-        </td>
-      </tr>
+      <%= render 'feature_flag', feature_flag: feature_flag %>
     <% end %>
   </tbody>
 </table>

@@ -19,24 +19,37 @@ module Ffe
     def create
       @feature_flag = Ffe::FeatureFlag.new(feature_flag_params.except(:milieus, :clear_expires_at))
 
-      if @feature_flag.save
-        redirect_to feature_flag_path(@feature_flag), notice: 'FFE created.'
-      else
-        render :new, status: :unprocessable_content
+      respond_to do |format|
+        if @feature_flag.save
+          format.html { redirect_to feature_flags_path, notice: 'FFE created.' }
+          format.turbo_stream { render turbo_stream: turbo_stream.prepend(:feature_flags, partial: 'ffe/feature_flags/feature_flag', locals: { feature_flag: @feature_flag }) } # rubocop:disable Layout/LineLength
+          format.json { render json: @feature_flag, status: :created }
+        else
+          format.html { render :new, status: :unprocessable_content }
+          format.json { render json: @feature_flag.errors, status: :unprocessable_content }
+        end
       end
     end
 
     def update
-      if @feature_flag.update(feature_flag_params.except(:milieus, :clear_expires_at))
-        redirect_to feature_flag_path(@feature_flag), notice: 'FFE updated.'
-      else
-        render :edit, status: :unprocessable_content
+      respond_to do |format|
+        if @feature_flag.update(feature_flag_params.except(:milieus, :clear_expires_at))
+          format.html { redirect_to feature_flags_path, notice: 'FFE updated.' }
+          format.turbo_stream { render turbo_stream: turbo_stream.replace(ActionView::RecordIdentifier.dom_id(@feature_flag), partial: 'ffe/feature_flags/feature_flag', locals: { feature_flag: @feature_flag }) }
+          format.json { render json: @feature_flag, status: :ok }
+        else
+          format.html { render :edit, status: :unprocessable_content }
+          format.json { render json: @feature_flag.errors, status: :unprocessable_content }
+        end
       end
     end
 
     def destroy
       @feature_flag.destroy
-      redirect_to feature_flags_path, notice: 'FFE destroyed.'
+      respond_to do |format|
+        format.html { redirect_to feature_flags_path, notice: 'FFE destroyed.' }
+        format.turbo_stream { render turbo_stream: turbo_stream.remove(ActionView::RecordIdentifier.dom_id(@feature_flag)) }
+      end
     end
 
     def dump

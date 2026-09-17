@@ -1,0 +1,13 @@
+<%# locals: (feature_flag:) %>
+
+<tr id="<%= dom_id(feature_flag) %>">
+  <td><%= link_to feature_flag.name, ffe.feature_flag_path(feature_flag) %></td>
+  <td><%= feature_flag.description %></td>
+  <td><%= feature_flag.enabled %></td>
+  <td><%= feature_flag.expires_at&.strftime('%Y-%m-%dT%H:%M') %></td>
+  <td><%= feature_flag.readable_milieus %></td>
+  <td>
+    <%= link_to 'Bearbeiten', ffe.edit_feature_flag_path(feature_flag) %>
+    <%= button_to 'Löschen', ffe.feature_flag_path(feature_flag), method: :delete %>
+  </td>
+</tr>
