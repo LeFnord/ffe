@@ -8,6 +8,7 @@ gemspec
 # Your gem is dependent on a prerelease version of Rails. Once you can lock this
 # dependency down to a specific version, move it to your gemspec.
 gem 'rails', github: 'rails/rails', branch: 'main'
+gem 'turbo-rails'
 
 gem 'puma' # https://github.com/puma/puma
 
