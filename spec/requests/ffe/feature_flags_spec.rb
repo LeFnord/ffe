@@ -17,7 +17,7 @@ RSpec.describe 'FeatureFlags', type: :request do
       post '/ffe/feature_flags', params: { feature_flag: attributes_for(:feature_flag, name: 'Beta') }
     end.to change(Ffe::FeatureFlag, :count).by(1)
 
-    expect(response).to redirect_to("/ffe/feature_flags/#{Ffe::FeatureFlag.order(:created_at).last.id}")
+    expect(response).to redirect_to('/ffe/feature_flags')
   end
 
   specify 'updates a ffe' do
@@ -25,7 +25,7 @@ RSpec.describe 'FeatureFlags', type: :request do
       feature_flag: attributes_for(:feature_flag, name: 'Gamma')
     }
 
-    expect(response).to redirect_to("/ffe/feature_flags/#{feature_flag.id}")
+    expect(response).to redirect_to('/ffe/feature_flags')
     expect(feature_flag.reload.name).to eq('Gamma')
   end
 
